@@ -49,45 +49,68 @@ collecting gold bags, using items and killing monsters.
 
 ## Items
 
-Red Potion    - Gives 20 points of health to the other player
-Purple Potion - Removes 15 points of health from the other player
-Yellow Potion - Gives 20 points of speed to the other player
-Green Potion  - Removes 15 points of speed from the other player
-Blue Potion   - Swaps the characters of both players
-Amulet        - Gives 5 attack power and changes the attack type of the
-		other player to Mage
-Boots         - Gives 5 attack power and changes the attack type of the
-		other player to Rogue
-Sword         - Gives 5 attack power and changes the attack type of the
-	 	other player to Warrior
+| Item          | Description                                                                     |
+|---------------|---------------------------------------------------------------------------------|
+| Red Potion    | Gives 20 points of health to the other player                                   |
+| Purple Potion | Removes 15 points of health from the other player                               |
+| Yellow Potion | Gives 20 points of speed to the other player                                    |
+| Green Potion  | Removes 15 points of speed from the other player                                |
+| Blue Potion   | Swaps the characters of both players                                            |
+| Amulet        | Gives 5 attack power and changes the attack type of the other player to Mage    |
+| Boots         | Gives 5 attack power and changes the attack type of the other player to Rogue   |
+| Sword         | Gives 5 attack power and changes the attack type of the other player to Warrior |
 
 
 ## Controls
 
-***** Player 1 (Left player)
+### Player 1 (Left player)
 
-Start button  - 1
-Movement      - W A S D
-Attack button - R
-Item 1 button - T
-Item 2 button - Y
+| Action        | Key     |
+|---------------|---------|
+| Start button  | 1       |
+| Movement      | W A S D |
+| Attack button | R       |
+| Item 1 button | T       |
+| Item 2 button | Y       |
 
-***** Player 2 (Right player)
+### Player 2 (Right player)
 
-Start button  - 2
-Movement      - Arrow keys
-Attack button - I
-Item 1 button - O
-Item 2 button - P
+| Action        | Key        |
+|---------------|------------|
+| Start button  | 2          |
+| Movement      | Arrow keys |
+| Attack button | I          |
+| Item 1 button | O          |
+| Item 2 button | P          |
 
 To start the game both players must press start together (1 + 2)
 
 
 # Dev Guide
 
-## Install in Linux
+## Install Linux Dependencies
 
-sudo apt install allegro5-dev ...
+Execute the following command to install the project dependencies.
+
+```bash
+sudo apt install g++ make liballegro-acodec5-dev liballegro-audio5-dev liballegro-dialog5-dev liballegro-image5-dev liballegro-physfs5-dev liballegro-ttf5-dev liballegro-video5-dev liballegro5-dev
+```
+
+## Compile the Project Codes
+
+Execute the following command in root directory to compile the project.
+
+```bash
+make
+```
+
+## Execute the Game
+
+Execute the following command in root directory to run the project.
+
+```bash
+./dungeon-looters
+```
 
 # Credits
 
